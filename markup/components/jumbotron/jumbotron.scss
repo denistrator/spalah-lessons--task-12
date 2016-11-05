@@ -3,7 +3,13 @@
     background-color: #11343a;
     .jumbotron_header {
         margin: auto;
-        padding: 100px;
+        padding: 30px 0;
         text-align: center;
+        background-color:#112a2f;
+        & h1 {
+            color: white;
+            margin: 0 50px;
+            text-transform: uppercase;
+        }
     }
 }
