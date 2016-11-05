@@ -1,0 +1,41 @@
+.m-quotes {
+	&-carousel {
+		padding-top: (65 / 1170 * 100%);
+		padding-bottom: (70 / 1170 * 100%);
+		background-color: #131316; // remove. use block-mod
+		color: #fff; // remove. use block-mod
+		text-align: center;
+		.swiper-slide > .container > .row > [class*="col-"] {
+			padding-left: 0;
+		} // polyfill(?)
+		&-pagination {
+			.swiper-container-horizontal > &.swiper-pagination-bullets {
+				position: relative;
+				top: 12px;
+				bottom: 0;
+			}
+			.swiper-container-horizontal > & .swiper-pagination-bullet {
+				margin: 0 4px;
+			}
+			.swiper-pagination-bullet {
+				border-radius: 0;
+				background-color: #fff;
+				opacity: 1;
+				width: 5px;
+				height: 5px;
+				&.swiper-pagination-bullet-active {
+					background-color: $accent-color;
+				}
+			}
+		}
+	}
+	&-quote {
+		display: block;
+		&-text {
+			display: inline;
+		}
+	}
+	&-author {
+		display: block;
+	}
+}
