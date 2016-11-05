@@ -1,0 +1,84 @@
+//font-family: 'Oswald', sans-serif;
+body {
+	font-family: $font-family-base;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+h1, .h1 {
+	font-size: 65px;
+}
+h2, .h2 {
+	font-size: 30px;
+}
+h3, .h3 {
+	font-size: 20px;
+}
+h4, .h4 {
+	font-size: 16px;
+}
+h5, .h5 {
+	font-size: 14px;
+}
+h6, .h6 {
+	font-size: 12px;
+}
+.block {
+	&-name {
+		font-size: 16px;
+		font-weight: 400;
+		color: #515151;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-title {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-desc {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 25px;
+	}
+}
+.features {
+	&-title {
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&-title-light {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	&-desc {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 25px;
+	}
+	&-desc-sm {
+		line-height: 20px;
+	}
+	&-desc-lg {
+		font-size: 20px;
+	}
+}
+.carousel{
+	&-quote {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 25px;
+	}
+	&-desc {
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+.copy {
+	font-size: 16px;
+	font-weight: 300;
+}
