@@ -1,3 +1,5 @@
+ $block-inverse-color: #fff !default;
+
 .block {
 	&-title {
 		margin: 0;
@@ -16,7 +18,13 @@
 			height: 3px;
     		margin: auto;
 			background-color: $accent-color;
-			// background-color: red;
+		}
+	}
+	&-inverse {
+		color: $block-inverse-color;
+		h1,h2,h3,h4,h5,h6,
+		.h1,.h2,.h3,.h4,.h5,.h6 {
+			color: inherit;
 		}
 	}
 }
