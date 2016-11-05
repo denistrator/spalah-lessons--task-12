@@ -1,25 +1,4 @@
-// Common styles of the project
-
-html, body {
-    height: 100%;
-}
-
-.page {
-    
-}
-
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
-* html .page__wrapper {
-    height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
-}
+// bootstrap 4 components
 
 // Core CSS
 // @import "bower_components/bootstrap/scss/reboot";
@@ -72,6 +51,30 @@ html, body {
 // @import "bower_components/bootstrap/scss/utilities/text";
 @import "bower_components/bootstrap/scss/utilities/visibility";
 
+// end of botstrap
 
+
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
 
 @import "global";
