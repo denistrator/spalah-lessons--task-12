@@ -5,6 +5,10 @@
 
 // colors
 $accent-color: #ffe600;
+$lighten: #11343a;
+$light: #112a2f;
+$dark: #12191d;
+$darken: #131316;
 
 
 // Grid breakpoints
@@ -49,3 +53,7 @@ $grid-gutter-widths: (
   lg: $grid-gutter-width-base,
   xl: $grid-gutter-width-base
 );
+
+
+//type
+$font-family-base: 'Oswald', sans-serif;

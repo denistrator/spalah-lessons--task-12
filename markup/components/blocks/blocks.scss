@@ -12,11 +12,25 @@
 			top: -19px;
 			left: -50%;
     		right: -50%;
-			width: 65px;
-			height: 1px;
+			max-width: 170px;
+			height: 3px;
     		margin: auto;
 			background-color: $accent-color;
 			// background-color: red;
 		}
+	}
+}
+.bg {
+	&-lighten {
+		background-color: $lighten;
+	}
+	&-light {
+		background-color: $light;
+	}
+	&-dark {
+		background-color: $dark;
+	}
+	&-darken {
+		background-color: $darken;
 	}
 }
