@@ -4636,6 +4636,7 @@ else if (typeof define === 'function' && define.amd) {
 
 
 
+
 $(document).ready(function() {
     var m_gallery = new Swiper('.m-gallery', {
         loop: true,
@@ -4690,4 +4691,14 @@ $(document).ready(function() {
         m_gallery.slideTo(12);
     })
 });
+
+
+$(document).ready(function() {
+    var m_quotes_carousel = new Swiper('.m-quotes-carousel', {
+        loop: true,
+        pagination: '.m-quotes-carousel-pagination',
+        paginationClickable: true
+    })
+});
+
 
