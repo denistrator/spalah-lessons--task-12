@@ -15,9 +15,11 @@
 } // have to be removed 
 
 .m-gallery {
+	margin-top: 65px;
 	&-slide {
 		position: relative;
 		height: 440px;
+		overflow: hidden;
 		&-img-holder {
 			display: block;
 			width: (670 / 1170 * 100%);
@@ -25,7 +27,7 @@
 			top: 0;
 			bottom: 0;
 			left: 0;
-			background-color: #FAFAFA;
+			background-color: #11343a;
 		}
 		&-desc {
 			position: absolute;
@@ -80,14 +82,75 @@
 
 	&-thumbs-holder {
 		font-size: 0;
+		margin-top: 65px;
 	}
 	&-thumb {
 		display: inline-block;
 		width: 16.666%;
 		font-size: 1rem;
+		overflow: hidden;
+		background-position: center;
+		background-size: cover; // !
+		background-repeat: no-repeat;
+		&:nth-child(1) {
+			background-color: #11343a;
+		}
+		&:nth-child(3) {
+			background-color: #11343a;
+		}
+		&:nth-child(5) {
+			background-color: #11343a;
+		}
+		&:nth-child(8) {
+			background-color: #11343a;
+		}
+		&:nth-child(10) {
+			background-color: #11343a;
+		}
+		&:nth-child(12) {
+			background-color: #11343a;
+		}
+		&:nth-child(2) {
+			background-color: #394948;
+		}
+		&:nth-child(4) {
+			background-color: #394948;
+		}
+		&:nth-child(6) {
+			background-color: #394948;
+		}
+		&:nth-child(7) {
+			background-color: #394948;
+		}
+		&:nth-child(9) {
+			background-color: #394948;
+		}
+		&:nth-child(11) {
+			background-color: #394948;
+		}
+		&:hover .m-gallery-thumb-holder {
+			opacity: 1;
+			transform: translate(0);
+		}
 		&-holder {
 			position: relative;
 			padding-bottom: 78.125%;
+			cursor: pointer;
+			opacity: 0;
+
+			transform: translate(100%);
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background-color: #ffe600;
+				opacity: 0.6; // !
+				z-index: -1;
+			}
 		}
 		&-fill-size {
 			position: absolute;
@@ -104,6 +167,7 @@
 		&-inner {
 			display: table-cell;
 			vertical-align: middle;
+			text-align: center;
 		}
 	}
 
