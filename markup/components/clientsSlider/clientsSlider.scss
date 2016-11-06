@@ -1,0 +1,32 @@
+.clients-carousel {
+	.swiper-wrapper {
+		&:after {
+			content: '';
+			display: block;
+			height: 100%;
+			width: 1px;
+		}
+	}
+	&-slide {
+		text-align: center;
+		
+	}
+	&-link {
+		display: block;
+	}
+	&-img-holder {
+		
+	}
+	&-img {
+		
+	}
+	&-buttons {
+		margin-top: (60 / 1170 * 100%);
+		text-align: center;
+	}
+	&-button-prev,
+	&-button-next {
+		position: relative;
+		margin: 0 13px;
+	}
+}
