@@ -1,5 +1,5 @@
 var data = {
-	slide: [
+	quotes_slide: [
 		{
 			author: "Daniel J. Boorstin", 
 		 	quote: "An image is not simply a trademark, a design, a slogan or an easily remembered picture. It is a studiously crafted personality profile of an individual, institution,corporation, product or service"
