@@ -409,6 +409,20 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   font-style: normal;
 }
 
+.font-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: "Oswald", sans-serif;
 }
@@ -506,36 +520,51 @@ h6, .h6 {
 }
 
 .btn {
-  padding: 20px 50px;
+  padding: 18px 50px;
+  border: none;
   background-color: #ffe600;
+  outline: none;
+  vertical-align: top;
 }
 
-.arrow-down {
-  background-color: #ffe600;
-  padding: 20px;
-  height: 18px;
-  width: 18px;
+.btn:not(.prevent-tt) {
+  text-transform: uppercase;
 }
 
-.arrow-up {
-  background-color: #ffe600;
-  padding: 20px;
-  height: 18px;
-  width: 18px;
+.btn:not(.prevent-ta) {
+  text-align: center;
 }
 
-.arrow-left {
-  background-color: #ffe600;
-  padding: 10px;
-  height: 10px;
-  width: 10px;
+.btn-arrow {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  padding: 0;
+  color: #fff;
 }
 
-.arrow-right {
-  background-color: #ffe600;
-  padding: 10px;
-  height: 10px;
-  width: 10px;
+.btn-arrow-sm {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+}
+
+.btn-arrow-down:before {
+  content: "\e903";
+}
+
+.btn-arrow-up:before {
+  content: "\e904";
+}
+
+.btn-arrow-left:before {
+  content: "\e901";
+}
+
+.btn-arrow-right:before {
+  content: "\e902";
 }
 
 .container {
@@ -2624,6 +2653,15 @@ button.swiper-pagination-bullet {
   background-color: #ffe600;
 }
 
+.block-inverse {
+  color: #fff;
+}
+
+.block-inverse h1, .block-inverse h2, .block-inverse h3, .block-inverse h4, .block-inverse h5, .block-inverse h6,
+.block-inverse .h1, .block-inverse .h2, .block-inverse .h3, .block-inverse .h4, .block-inverse .h5, .block-inverse .h6 {
+  color: inherit;
+}
+
 .bg-lighten {
   background-color: #11343a;
 }
@@ -2638,6 +2676,31 @@ button.swiper-pagination-bullet {
 
 .bg-darken {
   background-color: #131316;
+}
+
+.clients-carousel .swiper-wrapper:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+}
+
+.clients-carousel-slide {
+  text-align: center;
+}
+
+.clients-carousel-link {
+  display: block;
+}
+
+.clients-carousel-buttons {
+  margin-top: 5.12821%;
+  text-align: center;
+}
+
+.clients-carousel-button-prev, .clients-carousel-button-next {
+  position: relative;
+  margin: 0 13px;
 }
 
 .container {
@@ -2682,6 +2745,7 @@ button.swiper-pagination-bullet {
   right: 0;
   width: 40.17094%;
   margin-left: 30px;
+  overflow-y: auto;
 }
 
 .m-gallery-slide-desc-aligner {
@@ -2698,7 +2762,7 @@ button.swiper-pagination-bullet {
 .m-gallery-close {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 25px;
   width: 14px;
   height: 14px;
   border: none;
@@ -2842,15 +2906,20 @@ button.swiper-pagination-bullet {
 
 .jumbotron .jumbotron_header {
   margin: auto;
-  padding: 100px;
+  padding: 30px 0;
   text-align: center;
+  background-color: #112a2f;
+}
+
+.jumbotron .jumbotron_header h1 {
+  color: white;
+  margin: 0 50px;
+  text-transform: uppercase;
 }
 
 .m-quotes-carousel {
   padding-top: 5.55556%;
   padding-bottom: 5.98291%;
-  background-color: #131316;
-  color: #fff;
   text-align: center;
 }
 
