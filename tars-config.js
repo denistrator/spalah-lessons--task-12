@@ -21,7 +21,11 @@ module.exports = {
         "webpack": {
             "useHMR": false
         },
-        "jsPathsToConcatBeforeModulesJs": ["bower_components/jquery/dist/jquery.min.js", "bower_components/swiper/dist/js/swiper.jquery.js"],
+        "jsPathsToConcatBeforeModulesJs": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/swiper/dist/js/swiper.jquery.js",
+            "bower_components/bootstrap/dist/js/bootstrap.min.js"
+        ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
         "lintJsCodeAfterModules": false
