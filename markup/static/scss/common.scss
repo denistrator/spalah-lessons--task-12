@@ -1,8 +1,8 @@
 // bootstrap 4 components
 
 // Core CSS
-/* @import "bower_components/bootstrap/scss/reboot";
-@import "bower_components/bootstrap/scss/type"; */
+@import "bower_components/bootstrap/scss/reboot";
+@import "bower_components/bootstrap/scss/type";
 @import "type";
 @import "btns";
 @import "bower_components/bootstrap/scss/images";
@@ -33,22 +33,22 @@
 @import "bower_components/bootstrap/scss/close";
 
 // Components w/ JavaScript
-// @import "bower_components/bootstrap/scss/modal";
+@import "bower_components/bootstrap/scss/modal";
 @import "bower_components/bootstrap/scss/tooltip";
-// @import "bower_components/bootstrap/scss/popover";
-// @import "bower_components/bootstrap/scss/carousel";
+@import "bower_components/bootstrap/scss/popover";
+@import "bower_components/bootstrap/scss/carousel";
 
 // Utility classes
-// @import "bower_components/bootstrap/scss/utilities/align";
-// @import "bower_components/bootstrap/scss/utilities/background";
-// @import "bower_components/bootstrap/scss/utilities/borders";
+@import "bower_components/bootstrap/scss/utilities/align";
+@import "bower_components/bootstrap/scss/utilities/background";
+@import "bower_components/bootstrap/scss/utilities/borders";
 @import "bower_components/bootstrap/scss/utilities/clearfix";
-// @import "bower_components/bootstrap/scss/utilities/display";
-// @import "bower_components/bootstrap/scss/utilities/flex";
+@import "bower_components/bootstrap/scss/utilities/display";
+@import "bower_components/bootstrap/scss/utilities/flex";
 @import "bower_components/bootstrap/scss/utilities/float";
-// @import "bower_components/bootstrap/scss/utilities/screenreaders";
-// @import "bower_components/bootstrap/scss/utilities/spacing";
-// @import "bower_components/bootstrap/scss/utilities/text";
+@import "bower_components/bootstrap/scss/utilities/screenreaders";
+@import "bower_components/bootstrap/scss/utilities/spacing";
+@import "bower_components/bootstrap/scss/utilities/text";
 @import "bower_components/bootstrap/scss/utilities/visibility";
 
 // end of botstrap
