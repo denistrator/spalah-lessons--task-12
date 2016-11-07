@@ -1,0 +1,14 @@
+input, .input {
+	background: #12191d;
+	border: $form-border;
+	color:#fff;
+	font-size: 15px;
+	padding: 20px;
+	font-family: $font-family-base;
+} 
+
+
+::-webkit-input-placeholder {color:$color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-moz-placeholder          {color:$color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}/* Firefox 19+ */
+::-moz-placeholder           {color:$color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-ms-input-placeholder      {color:$color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
