@@ -1,16 +1,17 @@
 // bootstrap 4 components
 
 // Core CSS
-// @import "bower_components/bootstrap/scss/reboot";
-// @import "bower_components/bootstrap/scss/type";
+@import "bower_components/bootstrap/scss/reboot";
+@import "bower_components/bootstrap/scss/type";
 @import "type";
 @import "btns";
+@import "forms";
 @import "bower_components/bootstrap/scss/images";
-// @import "bower_components/bootstrap/scss/code";
+@import "bower_components/bootstrap/scss/code";
 @import "bower_components/bootstrap/scss/grid";
-// @import "bower_components/bootstrap/scss/tables";
-// @import "bower_components/bootstrap/scss/forms";
-// @import "bower_components/bootstrap/scss/buttons";
+@import "bower_components/bootstrap/scss/tables";
+@import "bower_components/bootstrap/scss/forms";
+@import "bower_components/bootstrap/scss/buttons";
 
 // Components
 @import "bower_components/bootstrap/scss/animation";
@@ -42,14 +43,6 @@
 // @import "bower_components/bootstrap/scss/utilities/align";
 // @import "bower_components/bootstrap/scss/utilities/background";
 // @import "bower_components/bootstrap/scss/utilities/borders";
-@import "bower_components/bootstrap/scss/utilities/clearfix";
-// @import "bower_components/bootstrap/scss/utilities/display";
-// @import "bower_components/bootstrap/scss/utilities/flex";
-@import "bower_components/bootstrap/scss/utilities/float";
-// @import "bower_components/bootstrap/scss/utilities/screenreaders";
-// @import "bower_components/bootstrap/scss/utilities/spacing";
-// @import "bower_components/bootstrap/scss/utilities/text";
-@import "bower_components/bootstrap/scss/utilities/visibility";	
 
 // end of botstrap
 
