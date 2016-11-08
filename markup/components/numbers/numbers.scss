@@ -1,0 +1,27 @@
+.numbers {
+	&-list {
+		@include nl();
+		margin-top: -($grid-gutter-width-base);
+	}
+	&-item {
+		margin-top: $grid-gutter-width-base;
+		padding: (35 / 1170 * 400%) (30 / 1170 * 400%);
+		text-align: center;
+		border: 1px solid $accent-color;
+	}
+	&-number {
+		font-size: 40px;
+		font-weight: 700;
+		margin: 0;
+		line-height: 1;
+	}
+	&-desc {
+		margin: 0;
+		margin-top: (15 / 1170 * 400%);
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $accent-color;
+		line-height: 1;
+	}
+}
