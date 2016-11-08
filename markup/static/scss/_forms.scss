@@ -12,3 +12,8 @@ input, .input, textarea, .textarea {
 ::-moz-placeholder          {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
 ::-moz-placeholder           {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
 ::-ms-input-placeholder      {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
