@@ -23,8 +23,11 @@ module.exports = {
         },
         "jsPathsToConcatBeforeModulesJs": [
             "bower_components/jquery/dist/jquery.min.js",
-            "bower_components/swiper/dist/js/swiper.jquery.js",
-            "bower_components/bootstrap/dist/js/bootstrap.min.js"
+            "bower_components/tether/dist/js/tether.min.js",
+            "bower_components/bootstrap/dist/js/bootstrap.min.js",
+            "bower_components/swiper/dist/js/swiper.jquery.min.js",
+            "bower_components/waypoints/lib/jquery.waypoints.min.js",
+            "markup/static/js/scripts/jquery.counterup.min.js",
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
