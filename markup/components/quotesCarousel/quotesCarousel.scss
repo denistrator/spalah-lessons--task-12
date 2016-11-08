@@ -1,7 +1,5 @@
 .m-quotes {
 	&-carousel {
-		padding-top: (65 / 1170 * 100%);
-		padding-bottom: (70 / 1170 * 100%);
 		text-align: center;
 		.swiper-slide > .container > .row > [class*="col-"] {
 			padding-left: 0;
@@ -29,6 +27,7 @@
 	}
 	&-quote {
 		display: block;
+		line-height: 25px;
 		&-text {
 			display: inline;
 		}
