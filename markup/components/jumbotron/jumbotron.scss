@@ -1,23 +1,21 @@
-$bg_jumbotron: #11343a;
-$bg_nav: #112a2f;
-
+@import "static/scss/vars";
 
 .jumbotron {
     height: 100vh;
-    background-color: $bg_jumbotron;
+    background-color: $lighten;
     margin: 0;
     padding: 0;
     border-radius: 0;
     position: relative;
     .navbar {
         padding: 0;
-        background-color: $bg_nav;
+        background-color: $light;
         .nav {
             float: right;
             margin: 10px 0;
             list-style-type: square;
             & li {
-                color:#ffce00;
+                color:$accent-color;
                 padding: 17px 5px;
                 float: left;
                 margin: 0 17px;
@@ -26,7 +24,7 @@ $bg_nav: #112a2f;
                     color: white;
                     }
                 span:hover {
-                    color: #ffce00;
+                    color: $accent-color;
                 }
                 a {
                     font-size: 1.1vw;
@@ -36,7 +34,7 @@ $bg_nav: #112a2f;
                 }
             }
             .active a {
-                    color:#ffce00;
+                    color:$accent-color;
             }
             & li:first-child {
                 list-style: none;
@@ -48,7 +46,7 @@ $bg_nav: #112a2f;
     }
 }
     .container-fluid {
-        width: 80%;
+        max-width: 1170px;
     }
     .navbar-brand {
         margin: 10px 0;
@@ -63,7 +61,7 @@ $bg_nav: #112a2f;
         right: 0;
         left: 0;
         height: 40%;
-        background-color:$bg_nav;
+        background-color:$light;
         display: table;
         width: 100%;
         .container {
@@ -90,13 +88,5 @@ $bg_nav: #112a2f;
         right: 50%;
         left: 50%;
         margin-left: -18px;
-        font-size: 1vw;
-        svg {
-            position: absolute;
-            top: 30%;
-            right: 50%;
-            left: 27%;
-        }
-
     }
 
