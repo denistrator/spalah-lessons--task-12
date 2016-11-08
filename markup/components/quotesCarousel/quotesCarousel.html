@@ -1,14 +1,14 @@
-<div class="swiper-container m-quotes-carousel bg-darken block-inverse">
+<div class="swiper-container m-quotes-carousel bg-darken block-inverse p-md">
 	<div class="swiper-wrapper">
 		{{#each quotes_slide}}
 			<div class="swiper-slide">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 offset-md-3 row col-sm-8 offset-sm-2">
-							<q class="m-quotes-quote block-title">
-								<p class="m-quotes-quote-text">{{quote}}</p>
+							<q class="m-quotes-quote block-title prevent-tt">
+								<p class="m-quotes-quote-text carousel-quote">{{quote}}</p>
 							</q>
-							<small class="m-quotes-quote-author block-desc">{{author}}</small>
+							<small class="m-quotes-quote-author block-desc carousel-desc">{{author}}</small>
 						</div>
 					</div>
 				</div>
