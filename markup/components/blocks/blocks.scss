@@ -3,7 +3,7 @@
 .block {
 	&-title {
 		margin: 0;
-		// margin-bottom: 34px;
+		margin-bottom: 34px;
 	}
 	&-title + &-desc {
 		&:not(.prevent-ta) {
@@ -49,7 +49,7 @@
 }
 .p {
 	&-md {
-		// padding-top: (65 / 1170 * 100%);
+		padding-top: (65 / 1170 * 100%);
 		padding-bottom: (65 / 1170 * 100%);
 	}
 }
