@@ -10,6 +10,7 @@
 	background-color: $accent-color;
 	outline: none;
 	vertical-align: top; // ! better to remove
+	font-weight: 700;
 	&-arrow {
 		width: 60px;
 		height: 60px;
@@ -25,6 +26,7 @@
 		}
 		&-down:before {
 			content: "\e903";
+			margin: -8px;
 		}
 		&-up:before {
 			content: "\e904";
