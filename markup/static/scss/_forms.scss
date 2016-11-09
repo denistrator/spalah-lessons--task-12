@@ -4,6 +4,7 @@ input, .input, textarea, .textarea {
 	font-size: $form-font-size;
 	padding: 20px;
 	font-family: $font-family-base;
+	width: 100%;
 
 	&::-webkit-input-placeholder {font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
 	&::-moz-placeholder          { font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
