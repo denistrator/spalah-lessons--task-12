@@ -31,6 +31,11 @@
 		.h1,.h2,.h3,.h4,.h5,.h6 {
 			color: inherit;
 		}
+<<<<<<< HEAD
+		&-accent {
+			color: $accent-color;
+		}
+=======
 		input {
 			border-color: $block-inverse-color;
 			color: $block-inverse-color;
@@ -39,6 +44,7 @@
 		}
 		}
 
+>>>>>>> 679bc91a08bbbd25cf95f1833a401f1110e07931
 	}
 }
 .bg {
@@ -53,6 +59,7 @@
 	}
 	&-darken {
 		background-color: $darken;
+		width: 100%;
 	}
 }
 .p {
