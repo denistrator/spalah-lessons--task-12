@@ -1,0 +1,20 @@
+.progressbar {
+	&-items {
+		margin-top: (50 / 1170 * 100%);
+		color: $accent-color;
+	}
+	&-circle {
+		position: relative;
+	}
+	&-percents-control{
+		position: absolute;
+		top: ((142px / 2) - (52 / 2));
+		width: 100%;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 300;
+	}
+	&-name {
+		font-weight: 300;
+	}
+}
