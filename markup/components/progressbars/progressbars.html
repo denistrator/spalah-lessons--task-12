@@ -1,0 +1,22 @@
+<div class="block-inverse bg-dark">
+	<div class="container">
+		<h2 class="block-title">SKILLS</h2>
+		<p class="block-desc no-line">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.</p>
+		<div id="options-only">
+			<div class="row progressbar-items">
+				{{#each progressbars}}
+					<div class="col-md-3 col-sm-6">
+						<div class="progressbar-item">
+							<div class="progressbar-circle" id="progressbar-circle-{{circle_id}}">
+								<div class="progressbar-percents-control">
+									<span class="progressbar-percents"></span><span>&#37;</span>
+								</div>
+							</div> 
+							<h3 class="progressbar-name">{{name}}</h3>
+						</div>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

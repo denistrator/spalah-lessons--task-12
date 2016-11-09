@@ -28,6 +28,7 @@ module.exports = {
             "bower_components/swiper/dist/js/swiper.jquery.min.js",
             "bower_components/waypoints/lib/jquery.waypoints.min.js",
             "markup/static/js/scripts/jquery.counterup.min.js",
+            "bower_components/jquery-circle-progress/dist/circle-progress.min.js"
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
