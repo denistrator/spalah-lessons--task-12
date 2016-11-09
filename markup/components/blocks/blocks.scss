@@ -31,17 +31,23 @@
 		.h1,.h2,.h3,.h4,.h5,.h6 {
 			color: inherit;
 		}
+<<<<<<< HEAD
+		&-accent {
+			color: $accent-color;
+		}
+=======
 
 		&-accent {
 			color: $accent-color;
 		}
 
+>>>>>>> e6270953522a093ee86166fb7ec71a5b60173df1
 		input {
 			border-color: $block-inverse-color;
 			color: $block-inverse-color;
-		&::-webkit-input-placeholder {
-			color: $block-inverse-color;
-		}
+			&::-webkit-input-placeholder {
+				color: $block-inverse-color;
+			}
 		}
 	}
 }
