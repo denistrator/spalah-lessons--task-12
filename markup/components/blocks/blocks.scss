@@ -31,9 +31,17 @@
 		.h1,.h2,.h3,.h4,.h5,.h6 {
 			color: inherit;
 		}
+<<<<<<< HEAD
 		&-accent {
 			color: $accent-color;
 		}
+=======
+
+		&-accent {
+			color: $accent-color;
+		}
+
+>>>>>>> e6270953522a093ee86166fb7ec71a5b60173df1
 		input {
 			border-color: $block-inverse-color;
 			color: $block-inverse-color;
@@ -63,4 +71,10 @@
 		padding-top: (65 / 1170 * 100%);
 		padding-bottom: (65 / 1170 * 100%);
 	}
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.mt-30 {
+	margin-top: 30px;
 }
