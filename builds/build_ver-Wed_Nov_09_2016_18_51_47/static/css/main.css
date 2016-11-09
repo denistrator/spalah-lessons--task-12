@@ -3123,7 +3123,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
   background-color: #ffe600;
-  border-radius: 1px solid transparent;
+  border-radius: 50%;
   color: white;
 }
 
