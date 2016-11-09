@@ -31,6 +31,14 @@
 		.h1,.h2,.h3,.h4,.h5,.h6 {
 			color: inherit;
 		}
+		input {
+			border-color: $block-inverse-color;
+			color: $block-inverse-color;
+		&::-webkit-input-placeholder {
+			color: $block-inverse-color;
+		}
+		}
+
 	}
 }
 .bg {

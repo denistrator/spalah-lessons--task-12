@@ -1,14 +1,13 @@
 input, .input, textarea, .textarea {
 	background: $form-bg;
-	border: $form-border;
-	color: $color;;
+	border: 1px solid $form-border;
 	font-size: $form-font-size;
 	padding: 20px;
 	font-family: $font-family-base;
 } 
 
 
-::-webkit-input-placeholder {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
-::-moz-placeholder          {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
-::-moz-placeholder           {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
-::-ms-input-placeholder      {color: $color; font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-webkit-input-placeholder {font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-moz-placeholder          { font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-moz-placeholder           { font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
+::-ms-input-placeholder      { font-size: $font-size; font-weight: 300; font-family: $font-family-base;}
