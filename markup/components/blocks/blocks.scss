@@ -3,7 +3,7 @@
 .block {
 	&-title {
 		margin: 0;
-		// margin-bottom: 34px;
+		margin-bottom: 34px;
 	}
 	&-title + &-desc {
 		&:not(.prevent-ta) {
@@ -31,6 +31,9 @@
 		.h1,.h2,.h3,.h4,.h5,.h6 {
 			color: inherit;
 		}
+		&-accent {
+			color: $accent-color;
+		}
 	}
 }
 .bg {
@@ -45,6 +48,7 @@
 	}
 	&-darken {
 		background-color: $darken;
+		width: 100%;
 	}
 }
 .p {
