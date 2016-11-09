@@ -1,5 +1,5 @@
 {
-  "name": "Smak markup",
+  "name": "smak markup",
   "description": "Your awesome project description",
   "main": "gulpfile.js",
   "authors": [
@@ -20,6 +20,7 @@
     "jquery": "^3.1.1",
     "swiper": "^3.4.0",
     "bootstrap": "v4.0.0-alpha.5",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "jquery-circle-progress": "^1.2.0"
   }
 }
