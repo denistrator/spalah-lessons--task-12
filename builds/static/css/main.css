@@ -173,7 +173,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 
@@ -299,7 +300,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -323,6 +325,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -1875,14 +1878,16 @@ html, body {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
 }
 
 *,
 :before,
 :after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -1966,18 +1971,18 @@ div[class*="img-holder"] {
 }
 
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2016, Vladimir Kharlampidi
+ * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: March 10, 2017
  */
 .swiper-container {
   margin-left: auto;
@@ -2010,6 +2015,7 @@ div[class*="img-holder"] {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -2174,7 +2180,8 @@ button.swiper-pagination-bullet {
   border: none;
   margin: 0;
   padding: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
@@ -2300,46 +2307,50 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
   /* Firefox 3.6-15 */
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */
 }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
   /* Firefox 3.6-15 */
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */
 }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
   /* Firefox 3.6-15 */
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */
 }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
   /* Firefox 3.6-15 */
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */
 }
 
@@ -3040,28 +3051,6 @@ button.swiper-pagination-bullet {
   line-height: 1;
 }
 
-.progressbar-items {
-  margin-top: 4.2735%;
-  color: #ffe600;
-}
-
-.progressbar-circle {
-  position: relative;
-}
-
-.progressbar-percents-control {
-  position: absolute;
-  top: 45px;
-  width: 100%;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 300;
-}
-
-.progressbar-name {
-  font-weight: 300;
-}
-
 .m-quotes-carousel {
   text-align: center;
 }
@@ -3105,6 +3094,28 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
+.progressbar-items {
+  margin-top: 4.2735%;
+  color: #ffe600;
+}
+
+.progressbar-circle {
+  position: relative;
+}
+
+.progressbar-percents-control {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.progressbar-name {
+  font-weight: 300;
+}
+
 .container {
   text-align: center;
   margin: auto;
@@ -3123,7 +3134,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
   background-color: #ffe600;
-  border-radius: 50%;
+  border-radius: 1px solid transparent;
   color: white;
 }
 
@@ -3148,5 +3159,3 @@ hr {
 .icon-icon-4:before {
   content: "\e902";
 }
-
-/*# sourceMappingURL=main.css.map */
